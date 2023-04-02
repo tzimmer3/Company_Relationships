@@ -1,0 +1,27 @@
+name: nlp_testing
+channels:
+ - conda-forge
+ - pytorch
+ - nvidia
+ - defaults
+dependencies:
+  - python=3.9.5
+  - ipykernel
+  - numpy==1.22.2
+  - pandas==1.4.1
+  - scikit-learn==1.0.2
+  - spacy==3.4.4
+  - nltk==3.8.1
+  - seaborn==0.11.2
+  - matplotlib==3.6.1
+  - pip
+  - pip:
+    #- azureml-defaults # azureml-defaults is required for inference containers to build
+    #- werkzeug # werkzeug is required for inference servers' functions
+    #- xgboost==1.5.2
+    - torch
+
+## UNUSED
+  # - transformers==4.23.1
+  # - sentence-transformers==2.2.2
+  # - joblib==1.1.0
