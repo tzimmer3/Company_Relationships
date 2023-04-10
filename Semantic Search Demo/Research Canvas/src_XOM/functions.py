@@ -13,7 +13,7 @@ def vector_similarity(x: "list[float]", y: "list[float]") -> float:
 
     Because embeddings are normalized to length 1, the cosine similarity is the same as the dot product.
     """
-    return np.dot(np.array(x), np.array(y))
+    return round(np.dot(np.array(x), np.array(y)), 2)
 
 # ================== #
 #  Measure Similarity: Query vs Articles
